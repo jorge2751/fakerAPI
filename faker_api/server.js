@@ -64,9 +64,6 @@ app.post('/api/user/company', (req, res)=>{
     res.json(userAndCompany)
 })
 
-// console.log(newFakeProduct);
-// console.log(newFakeUser);
-// console.log(newFakeCompany);
 
 const portVerb = faker.hacker.ingverb()
 app.listen(port, () => console.log(`${portVerb.charAt(0).toUpperCase() + portVerb.slice(1)} on port: ${port}`))
